@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenght Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,400;0,700;0,800;1,100;1,200;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Lenght Converter</h1>
+        <p>Introduce the unit you would like to convert and the unit you would like to obtain.</p>
+        <span>Let's convert!</span>
+    </header>
+    <main>
+        <div class="starting-unit-input">
+            <input onblur="inputValue ()" placeholder="Value" type="text" id="input-value">
+        </div>
+
+        <div class="result-unit">
+            <p id="result-value"></p>
+        </div>
+
+        <div class="starting-unit-select">
+            <select onblur="startingSelect ()" name="starting-unit" id="starting-unit">
+                <option value=""></option>
+                <option value="meters">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="foots">Foots</option>
+                <option value="yards">Yards</option>
+            </select>
+        </div>
+        <div class="result-unit-select">
+            <select onblur="unitsSelect ()" name="result-unit" id="result-unit">
+                <option value=""></option>
+                <option value="meters">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="foots">Foots</option>
+                <option value="yards">Yards</option>
+            </select>
+        </div>
+
+        <div class="operate">
+            <Button type="submit" onclick="measureC ()">Get Result</Button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    font-family: 'Bitter', serif;
+}
+
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    display: grid;
+    gap: 30px;
+    color: #C09F80;
+}
+
+header h1 {
+    font-weight: 800;
+}
+
+header span {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+
+main {
+    height: 400px;
+    background-color: #D7CEC7;
+    display: grid;
+    place-content: center center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 30px 40px 60px 1fr;
+    gap: 40px;
+}
+
+main div {
+    display: grid;
+    justify-content: center;
+}
+
+.starting-unit-input {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.starting-unit-input input {
+    width: 150px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #C09F80;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.starting-unit-input input::placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
+.result-unit {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.result-unit p {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #C09F80;
+    color: #FFF;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.starting-unit-select {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.result-unit-select {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+select {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #FFF;
+    color: #C09F80;
+    border: none;
+}
+
+
+.operate {
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+
+.operate button {
+    color: #76323F;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
